@@ -29,12 +29,7 @@
                                     <th scope="col" class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                         Profe Name
                                     </th>
-                                    <th scope="col" width="200" class="px-6 py-3 bg-gray-50">
-                                        NumOfStudents
-                                    </th>
-                                    <th scope="col" width="200" class="px-6 py-3 bg-gray-50">
-                                        Actions
-                                    </th>
+
 
                                 </tr>
                                 </thead>
@@ -57,15 +52,7 @@
                                             {{ $course->name_prof }}
                                         </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                            {{ $course->num_of_students }}
-                                        </td>
 
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                            <a href="{{ route('teacher.courses.edit', $course->id) }}"
-                                                class="text-indigo-600 hover:text-indigo-900 mb-2 mr-2">Add</a>
-
-                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
